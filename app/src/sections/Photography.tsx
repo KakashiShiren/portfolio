@@ -4,7 +4,7 @@ const photos = Array.from({ length: 32 }, (_, index) => {
     photoNumber <= 17 || photoNumber >= 23 ? 'jpeg' : 'jpg';
 
   return {
-    src: `/photo_${photoNumber}.${extension}`,
+    src: `${import.meta.env.BASE_URL}photo_${photoNumber}.${extension}`,
     alt: `Photography shot ${photoNumber}`,
   };
 });

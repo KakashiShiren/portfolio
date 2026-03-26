@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { ArrowDownRight } from 'lucide-react';
 import { scrollToSelector } from '../lib/scroll';
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -65,7 +67,7 @@ const Hero = () => {
             <div className="hero-image-shell reveal is-visible relative overflow-hidden rounded-md">
               <img
                 ref={imageRef}
-                src="/photo_21.jpg"
+                src={asset('photo_21.jpg')}
                 alt="Photography highlight"
                 className="h-[15vh] max-w-lg object-cover object-center grayscale transition-transform duration-700 ease-smooth md:h-[50vh] md:w-full"
               />

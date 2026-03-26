@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 interface SkillCategory {
   title: string;
   skills: string[];
@@ -130,7 +132,7 @@ const About = () => {
           >
             <div className="overflow-hidden bg-white/5">
               <img
-                src="/asset_6.jpg"
+                src={asset('asset_6.jpg')}
                 alt="Interior with tapestry"
                 className="h-[320px] w-full object-cover transition-transform duration-700 ease-smooth hover:scale-[1.03] md:h-[420px]"
               />

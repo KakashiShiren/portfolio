@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 interface Project {
   number: string;
   title: string;
@@ -19,7 +21,7 @@ const projects: Project[] = [
     description:
       'An audio intelligence platform I co-founded. Upload a recording, get back structured transcripts, summaries, and searchable insights. Built on React/Next.js, Node.js, OpenAI Whisper, and HuggingFace. This one is a real product, not a side project.',
     tags: ['In Progress', '2026'],
-    image: '/project_1.jpg',
+    image: asset('project_1.jpg'),
     link: 'https://github.com/KakashiShiren/insightscribe-frontend',
   },
   {
@@ -29,7 +31,7 @@ const projects: Project[] = [
     description:
       'A natural language SQL agent that lets anyone query a database in plain English. No SQL needed — it handles multi-table joins, aggregations, and complex business questions on its own. Built with LangChain and LLaMA-3.3-70b.',
     tags: ['Development', '2025'],
-    image: '/project_2.jpg',
+    image: asset('project_2.jpg'),
     link: 'https://github.com/KakashiShiren/enterpriseiq',
   },
   {
@@ -39,7 +41,7 @@ const projects: Project[] = [
     description:
       'Built this because job tracking in spreadsheets was driving me crazy. Pulls real listings from the USAJobs API, normalizes the data, and tracks application timelines. Cut my manual tracking effort by 70%. Solo project, end to end. Built with React, Node.js, Express, and PostgreSQL.',
     tags: ['Development', '2024'],
-    image: '/project_3.jpg',
+    image: asset('project_3.jpg'),
     link: 'https://github.com/KakashiShiren/job-app-tracker-frontend',
   },
   {
@@ -49,7 +51,7 @@ const projects: Project[] = [
     description:
       "An AI-powered date planner that generates full personalized itineraries based on your budget, location, vibe, and occasion. Answer a few questions, get a complete plan back instantly. Built with React and Groq's API — and yes, it's actually deployed and working.",
     tags: ['Development', '2025'],
-    image: '/project_4.jpg',
+    image: asset('project_4.jpg'),
     link: 'https://perfect-date-two.vercel.app/',
   },
   {
@@ -59,7 +61,7 @@ const projects: Project[] = [
     description:
       'A live computer vision app that detects emotions and predicts age from a webcam feed in real time. Built with OpenCV, DeepFace, and a custom CNN. Optimized for low latency - no frame drops during live inference.',
     tags: ['Development', '2025'],
-    image: '/project_5.jpg',
+    image: asset('project_5.jpg'),
     link: 'https://github.com/KakashiShiren/facial-emotion-age-detection',
   },
 ];

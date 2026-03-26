@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 interface Service {
   number: string;
   title: string;
@@ -15,7 +17,7 @@ const services: Service[] = [
     description:
       "React, Node.js, Express on one end. PostgreSQL, REST APIs, and clean architecture on the other. I've built and shipped complete apps solo - JobQuest and InsightScribe both started as just an idea.",
     skills: ['React, Node.js, Express.js', 'REST APIs, PostgreSQL, MongoDB, Supabase', 'Git, GitHub, Jira, Modular Architecture'],
-    resume: '/Resume_SE.pdf',
+    resume: asset('Resume_SE.pdf'),
   },
   {
     number: '02',
@@ -23,7 +25,7 @@ const services: Service[] = [
     description:
       'I integrate LLMs, build NLP pipelines, and connect AI models to real software. Not just wrappers - actual systems with Whisper, LangChain, OpenAI, and HuggingFace doing meaningful work.',
     skills: ['LangChain, OpenAI, Whisper, HuggingFace', 'Python, TensorFlow, Scikit-learn, CNNs, LSTMs', 'Python, REST APIs, Model Optimization'],
-    resume: '/Resume_ML.pdf',
+    resume: asset('Resume_ML.pdf'),
   },
   {
     number: '03',
@@ -31,7 +33,7 @@ const services: Service[] = [
     description:
       "I've analyzed churn, built dashboards, and turned raw datasets into decisions. Whether it's EDA in Python or a Power BI report for leadership, I make data readable.",
     skills: ['Python, Pandas, NumPy, SQL, R', 'Tableau, Power BI, Jupyter', 'EDA, Feature Engineering, Predictive Modeling, Data Pipelines'],
-    resume: '/Resume_DS.pdf',
+    resume: asset('Resume_DS.pdf'),
   },
 ];
 
