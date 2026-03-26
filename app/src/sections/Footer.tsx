@@ -28,9 +28,9 @@ const Footer = () => {
         minute: '2-digit',
         second: '2-digit',
         hour12: true,
-        timeZone: 'Asia/Dhaka',
+        timeZone: 'America/New_York',
       });
-      setCurrentTime(`${timeString}, BST`);
+      setCurrentTime(`${timeString}, New York`);
     };
 
     updateTime();
@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-6 pt-8 md:flex-row">
           <div className="text-center md:text-left">
             <span className="mb-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--color-secondary-300)]">
-              Local time
+              New York time
             </span>
             <span className="font-mono text-sm font-medium uppercase tracking-[0.08em] text-[var(--color-secondary-100)]">
               {currentTime}
