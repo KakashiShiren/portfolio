@@ -31,7 +31,7 @@ const projects: Project[] = [
     description:
       'A natural language SQL agent that lets anyone query a database in plain English. No SQL needed — it handles multi-table joins, aggregations, and complex business questions on its own. Built with LangChain and LLaMA-3.3-70b.',
     tags: ['Development', '2025'],
-    image: asset('project_2.jpg'),
+    image: asset('project_3.jpg'),
     link: 'https://github.com/KakashiShiren/enterpriseiq',
   },
   {
@@ -41,7 +41,7 @@ const projects: Project[] = [
     description:
       'Built this because job tracking in spreadsheets was driving me crazy. Pulls real listings from the USAJobs API, normalizes the data, and tracks application timelines. Cut my manual tracking effort by 70%. Solo project, end to end. Built with React, Node.js, Express, and PostgreSQL.',
     tags: ['Development', '2024'],
-    image: asset('project_3.jpg'),
+    image: asset('project_4.jpg'),
     link: 'https://github.com/KakashiShiren/job-app-tracker-frontend',
   },
   {
