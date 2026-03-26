@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { scrollToSelector, scrollToTop } from '../lib/scroll';
 
@@ -18,27 +17,6 @@ const socialLinks = [
 ];
 
 const Footer = () => {
-  const [currentTime, setCurrentTime] = useState('');
-
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const timeString = now.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true,
-        timeZone: 'America/New_York',
-      });
-      setCurrentTime(`${timeString}, New York`);
-    };
-
-    updateTime();
-    const interval = setInterval(updateTime, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <footer className="relative bg-[var(--color-accent-200)] py-16 text-[var(--color-secondary-100)] md:py-24">
       <div className="section-pad w-full">
@@ -84,16 +62,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-6 pt-8 md:flex-row">
-          <div className="text-center md:text-left">
-            <span className="mb-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--color-secondary-300)]">
-              New York time
-            </span>
-            <span className="font-mono text-sm font-medium uppercase tracking-[0.08em] text-[var(--color-secondary-100)]">
-              {currentTime}
-            </span>
-          </div>
-
+        <div className="flex justify-center pt-8 md:justify-end">
           <button
             onClick={scrollToTop}
             className="group relative hidden w-fit items-center justify-center overflow-hidden rounded-full bg-[var(--color-accent-500)] p-5 transition-transform duration-500 hover:scale-90 md:flex"
