@@ -64,6 +64,16 @@ const projects: Project[] = [
     image: asset('project_5.jpg'),
     link: 'https://github.com/KakashiShiren/facial-emotion-age-detection',
   },
+  {
+    number: '06',
+    title: 'Academic Data Viz Projects',
+    subtitle: 'Data Visualisation',
+    description:
+      'Developed interactive Tableau dashboards across sales, revenue, healthcare, and finance domains by integrating and modeling complex datasets, delivering executive-ready visual insights that improved reporting efficiency and supported data-driven decision-making.',
+    tags: ['Development', '2025'],
+    image: asset('project_6.jpg'),
+    link: 'https://public.tableau.com/app/profile/tarun.reddy5252/vizzes',
+  },
 ];
 
 const Works = () => {
@@ -106,9 +116,10 @@ const Works = () => {
 
           <p className="max-w-2xl text-sm leading-relaxed text-cream/62 md:text-base lg:col-span-5 lg:col-start-8">
             I co-founded a startup, interned at an AI lab in Abu Dhabi, and kept building things on the side because I
-            couldn't stop. These five projects span the full range - LLM agents, audio intelligence, computer vision,
-            full-stack apps, and an AI date planner I built just because the idea was fun. Each one solved something
-            real. I built them because I needed them to exist or because the problem was too interesting to ignore.
+            couldn't stop. These six projects span the full range - LLM agents, audio intelligence, computer vision,
+            full-stack apps, data visualization, and an AI date planner I built just because the idea was fun. Each
+            one solved something real. I built them because I needed them to exist or because the problem was too
+            interesting to ignore.
           </p>
         </div>
 
