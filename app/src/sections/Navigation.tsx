@@ -4,6 +4,7 @@ import { scrollToSelector } from '../lib/scroll';
 
 const navLinks = [
   { href: '#services', label: 'Expertise' },
+  { href: '#experience', label: 'Work' },
   { href: '#works', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#about-me', label: 'About' },
