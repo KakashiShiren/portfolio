@@ -32,7 +32,7 @@ const projects: Project[] = [
       'A natural language SQL agent that lets anyone query a database in plain English. No SQL needed — it handles multi-table joins, aggregations, and complex business questions on its own. Built with LangChain and LLaMA-3.3-70b.',
     tags: ['Development', '2025'],
     image: asset('project_3.jpg'),
-    link: 'https://github.com/KakashiShiren/enterpriseiq',
+    link: 'https://enterpriseiq-app.streamlit.app/',
   },
   {
     number: '03',
@@ -62,7 +62,7 @@ const projects: Project[] = [
       'A live computer vision app that detects emotions and predicts age from a webcam feed in real time. Built with OpenCV, DeepFace, and a custom CNN. Optimized for low latency - no frame drops during live inference.',
     tags: ['Development', '2025'],
     image: asset('project_5.jpg'),
-    link: 'https://github.com/KakashiShiren/facial-emotion-age-detection',
+    link: 'https://kakashishiren.github.io/facial-emotion-age-detection/',
   },
   {
     number: '06',
