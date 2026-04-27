@@ -22,7 +22,7 @@ const projects: Project[] = [
       'An audio intelligence platform I co-founded. Upload a recording, get back structured transcripts, summaries, and searchable insights. Built on React/Next.js, Node.js, OpenAI Whisper, and HuggingFace. This one is a real product, not a side project.',
     tags: ['In Progress', '2026'],
     image: asset('project_1.jpg'),
-    link: 'https://github.com/KakashiShiren/insightscribe-frontend',
+    link: 'https://insightscribe.vercel.app',
   },
   {
     number: '02',
