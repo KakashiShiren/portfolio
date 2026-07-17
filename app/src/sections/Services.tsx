@@ -1,39 +1,45 @@
 import { useEffect, useRef, useState } from 'react';
 
-const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
-
 interface Service {
   number: string;
   title: string;
   description: string;
   skills: string[];
-  resume: string;
 }
 
 const services: Service[] = [
   {
     number: '01',
-    title: 'Full-Stack Development',
+    title: 'Generative AI',
     description:
-      "React, Node.js, Express on one end. PostgreSQL, REST APIs, and clean architecture on the other. I've built and shipped complete apps solo - JobQuest and InsightScribe both started as just an idea.",
-    skills: ['React, Node.js, Express.js', 'REST APIs, PostgreSQL, MongoDB, Supabase', 'Git, GitHub, Jira, Modular Architecture'],
-    resume: asset('Resume_SE.pdf'),
+      'I design and build enterprise Generative AI applications using large language models, retrieval-augmented generation, agentic workflows, and secure API integrations. My focus is on delivering reliable, scalable, and production-ready AI systems.',
+    skills: [
+      'LLMs, RAG, Prompt Engineering',
+      'LangChain, LangGraph, CrewAI',
+      'OpenAI, Azure OpenAI, Vector Search',
+    ],
   },
   {
     number: '02',
-    title: 'AI / ML Engineering',
+    title: 'Machine Learning & MLOps',
     description:
-      'I integrate LLMs, build NLP pipelines, and connect AI models to real software. Not just wrappers - actual systems with Whisper, LangChain, OpenAI, and HuggingFace doing meaningful work.',
-    skills: ['LangChain, OpenAI, Whisper, HuggingFace', 'Python, TensorFlow, Scikit-learn, CNNs, LSTMs', 'Python, REST APIs, Model Optimization'],
-    resume: asset('Resume_ML.pdf'),
+      'I develop machine learning and NLP solutions across the complete model lifecycle, including model training, evaluation, deployment, monitoring, explainability, and automated retraining for enterprise AI systems.',
+    skills: [
+      'PyTorch, TensorFlow, Scikit-learn',
+      'NLP, Transformers, BERT',
+      'MLflow, Docker, Kubernetes',
+    ],
   },
   {
     number: '03',
-    title: 'Data & Analytics',
+    title: 'Cloud AI Engineering',
     description:
-      "I've analyzed churn, built dashboards, and turned raw datasets into decisions. Whether it's EDA in Python or a Power BI report for leadership, I make data readable.",
-    skills: ['Python, Pandas, NumPy, SQL, R', 'Tableau, Power BI, Jupyter', 'EDA, Feature Engineering, Predictive Modeling, Data Pipelines'],
-    resume: asset('Resume_DS.pdf'),
+      'I build cloud-native AI services and scalable backend infrastructure for enterprise applications, supporting real-time inference, model serving, distributed data processing, and production reliability across modern cloud platforms.',
+    skills: [
+      'AWS, Azure, Google Cloud',
+      'FastAPI, Microservices, REST APIs',
+      'PySpark, Kafka, Airflow',
+    ],
   },
 ];
 
@@ -77,10 +83,7 @@ const Services = () => {
             </h2>
           </div>
           <p className="max-w-[40ch] text-[clamp(1rem,0.9286rem+0.3571vw,1.25rem)] leading-snug text-[var(--color-secondary-100)] lg:col-span-5 lg:col-start-8">
-            I build full-stack apps, AI pipelines, and data systems. 
-            Some of it came from coursework, most of it came from running into a problem and deciding to fix it. 
-            JobQuest started because tracking job applications in a spreadsheet was painful. 
-            InsightScribe started because audio data deserved better than manual notes. That's usually how it goes.
+            I build production-grade Generative AI and machine learning systems for healthcare and financial services. My work spans LLM applications, retrieval-augmented generation, NLP, cloud-native AI services, and MLOps. I focus on creating secure, scalable, observable, and reliable intelligent systems that solve complex business problems.
           </p>
         </div>
 
@@ -127,16 +130,6 @@ const Services = () => {
                       </span>
                     </div>
                   ))}
-                </div>
-
-                <div className="mt-8">
-                  <a
-                    href={service.resume}
-                    download
-                    className="inline-flex items-center justify-center border border-[var(--color-accent-500)] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--color-accent-300)] transition-all duration-300 ease-smooth hover:-translate-y-[2px] hover:bg-[var(--color-accent-400)] hover:text-[var(--color-secondary-400)]"
-                  >
-                    Download
-                  </a>
                 </div>
               </div>
             </div>

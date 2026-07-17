@@ -9,36 +9,84 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: 'Languages',
-    skills: ['Python', 'JavaScript', 'SQL', 'R'],
+    title: 'Generative AI',
+    skills: [
+      'LLMs',
+      'RAG Pipelines',
+      'LangChain',
+      'LangGraph',
+      'CrewAI',
+      'Prompt Engineering',
+      'OpenAI',
+      'Azure OpenAI',
+    ],
   },
   {
-    title: 'Frontend',
-    skills: ['React', 'Next.js', 'HTML', 'CSS'],
+    title: 'Machine Learning',
+    skills: [
+      'PyTorch',
+      'TensorFlow',
+      'Scikit-learn',
+      'NLP',
+      'Transformers',
+      'BERT',
+      'Predictive Modeling',
+      'Sentiment Analysis',
+    ],
   },
   {
-    title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'REST APIs'],
+    title: 'Programming',
+    skills: ['Python', 'SQL', 'Shell Scripting', 'JavaScript'],
+  },
+  {
+    title: 'Backend & APIs',
+    skills: [
+      'FastAPI',
+      'Django',
+      'Flask',
+      'REST APIs',
+      'Microservices',
+      'Async Processing',
+    ],
+  },
+  {
+    title: 'Cloud',
+    skills: [
+      'AWS',
+      'Microsoft Azure',
+      'Google Cloud',
+      'SageMaker',
+      'Azure AKS',
+      'Vertex AI',
+    ],
+  },
+  {
+    title: 'MLOps & DevOps',
+    skills: [
+      'Docker',
+      'Kubernetes',
+      'MLflow',
+      'Jenkins',
+      'Ansible',
+      'CI/CD',
+      'Model Monitoring',
+    ],
+  },
+  {
+    title: 'Data Engineering',
+    skills: [
+      'PySpark',
+      'Kafka',
+      'Airflow',
+      'Pandas',
+      'NumPy',
+      'ETL / ELT',
+      'Data Pipelines',
+    ],
   },
   {
     title: 'Databases',
-    skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
-  },
-  {
-    title: 'AI / ML',
-    skills: ['TensorFlow', 'Scikit-learn', 'OpenCV', 'CNNs', 'NLP', 'Computer Vision'],
-  },
-  {
-    title: 'LLMs & AI Tools',
-    skills: ['LangChain', 'OpenAI', 'Whisper', 'HuggingFace', 'Groq', 'Claude', 'Prompt Engineering'],
-  },
-  {
-    title: 'Data & Analytics',
-    skills: ['Pandas', 'NumPy', 'Tableau', 'Power BI'],
-  },
-  {
-    title: 'Cloud & Tools',
-    skills: ['AWS', 'Google Cloud', 'Docker', 'Git'],
+    skills: ['PostgreSQL', 'Oracle', 'Hive', 'Redis', 'FAISS', 'Pinecone'],
   },
 ];
 
@@ -72,18 +120,21 @@ const About = () => {
       className="relative bg-dark py-24 text-cream md:py-32 lg:py-40"
     >
       <div className="section-pad w-full">
-        <div id="skills" className="mb-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+        <div
+          id="skills"
+          className="mb-24 grid grid-cols-1 gap-12 border-b border-white/10 pb-20 md:mb-32 md:pb-24 lg:mb-36 lg:grid-cols-12 lg:gap-16 lg:pb-28"
+        >
           <div className="lg:col-span-5">
             <h2
               className={`section-title transition-all duration-700 ease-smooth ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
             >
-              ENGINEER
+              BUILD
               <br />
-              FOUNDER
+              SOLVE
               <br />
-              CREATOR/
+              DEPLOY/
             </h2>
           </div>
 
@@ -145,8 +196,7 @@ const About = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
             >
-              I am a CS grad student who co-founded a startup,
-              taught AI to other grad students, and still finds time to build things nobody asked for.
+              Senior AI/ML and Generative AI Engineer with 4+ years of experience designing and deploying production-grade intelligent systems across healthcare and financial services.
             </p>
 
             <div
@@ -158,14 +208,10 @@ const About = () => {
                 (About Me)
               </span>
               <p className="max-w-xl text-base leading-relaxed text-cream/60">
-                I&apos;m Tarun - full-stack engineer, AI builder, and occasional founder. I&apos;m finishing my Master&apos;s in Computer Science at Clark University while building InsightScribe on the side with a co-founder.
-                Before that I interned at an AI lab in Abu Dhabi, which sounds more glamorous than it was - mostly pipelines, model eval, and a lot of debugging.
+                I&apos;m Tarun, I specialize in building scalable Generative AI, machine learning, and cloud-native solutions for complex enterprise environments. My experience covers the complete AI lifecycle—from data processing and model development to API integration, containerized deployment, monitoring, and automated retraining.
               </p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-cream/60">
-                I work across the whole stack. Frontend, backend, ML, data - I pick whatever the problem needs.
-                Most of my best projects started because I got annoyed at something that didn&apos;t exist yet.
-                JobQuest was one. EnterpriseIQ was another.
-                PerfectDate was me procrastinating on something else entirely.
+                Across Johnson & Johnson, JPMorgan Chase, and Fortis Healthcare, I have worked on RAG architectures, enterprise assistants, clinical NLP, predictive analytics, financial sentiment modeling, and real-time inference systems. I build with Python, PyTorch, TensorFlow, LangChain, FastAPI, Spark, Docker, Kubernetes, and major cloud platforms. I focus on creating AI systems that are not only accurate in development but also secure, scalable, observable, and reliable in production.
               </p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-cream/60">
                 When I&apos;m not coding I&apos;m behind a camera. I shoot a lot - mostly architecture, light, and whatever catches my eye.

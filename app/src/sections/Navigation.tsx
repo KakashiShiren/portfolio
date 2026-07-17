@@ -5,7 +5,7 @@ import { scrollToSelector } from '../lib/scroll';
 const navLinks = [
   { href: '#services', label: 'Expertise' },
   { href: '#experience', label: 'Work' },
-  { href: '#works', label: 'Projects' },
+  { href: '#works', label: 'AI Systems' },
   { href: '#skills', label: 'Skills' },
   { href: '#about-me', label: 'About' },
   { href: '#contact', label: 'Contact' },
@@ -52,7 +52,7 @@ const Navigation = () => {
                   <li key={link.href}>
                     <button
                       onClick={() => scrollToSection(link.href)}
-                      className="flip-link leading-snug"
+                      className="flip-link whitespace-nowrap leading-snug"
                     >
                       <span>{link.label}</span>
                       <span aria-hidden="true">{link.label}</span>

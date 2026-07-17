@@ -304,6 +304,17 @@ html.lenis body {
   filter: saturate(0.92);
 }
 
+.project-visual-core {
+  transition:
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.8s ease;
+}
+
+.project-card:hover .project-visual-core {
+  transform: scale(1.035);
+  opacity: 0.95;
+}
+
 .project-card:hover .project-number {
   color: rgba(255, 255, 255, 0.28);
 }

@@ -5,7 +5,7 @@ const menuLinks = [
   { href: '#', label: 'Home' },
   { href: '#services', label: 'Expertise' },
   { href: '#experience', label: 'Work' },
-  { href: '#works', label: 'Projects' },
+  { href: '#works', label: 'AI Systems' },
   { href: '#skills', label: 'Skills' },
   { href: '#about-me', label: 'About' },
   { href: '#contact', label: 'Contact' },
